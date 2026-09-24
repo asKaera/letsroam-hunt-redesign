@@ -1,0 +1,16 @@
+/* Let's Roam — radii, shadows, motion */
+:root {
+  --radius-pill: 50px;      /* button rounded=default */
+  --radius-less: 15px;      /* button rounded=less */
+  --radius-card: 10px;      /* review card, accordion */
+  --radius-tile: 5px;       /* small frames */
+
+  --shadow-card: 0px 4px 10px 0px rgba(82, 82, 82, 0.1);
+  --shadow-sticker: inset 0 0 0 1.301px #000000, 0px 2px 0px 0px #000000; /* trust badge */
+
+  --ease-standard: ease; /* @kind other */
+  --duration-fast: 150ms; /* @kind other */
+}
+
+@keyframes lr-spin { to { transform: rotate(360deg); } }
+@keyframes lr-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }

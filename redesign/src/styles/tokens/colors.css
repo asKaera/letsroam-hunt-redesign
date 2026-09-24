@@ -1,0 +1,51 @@
+/* Let's Roam — color tokens (source: Figma "Design System - 2026 Q3" v2, Colors page) */
+:root {
+  /* Base palette — named exactly as in the Colors page */
+  --lr-white: #FEFEFE;
+  --lr-pure-white: #FFFFFF;
+  --lr-white-1: #F2F2F2;
+  --lr-black: #000000;
+  --lr-gray-1: #D9D9D6;
+  --lr-gray-2: #A7A8AA;
+  --lr-gray-3: #505759;
+  --lr-gray-4: #2D2D2D;
+  --lr-red: #E22222;               /* "Red (for use on errors only)" */
+  --lr-yellow: #FFC600;
+  --lr-star-yellow: #FDD264;       /* now an official palette entry */
+  --lr-gold: #B98900;
+  --lr-green: #7FB141;             /* "Scavengerhunt Green" */
+  --lr-blue: #53A6C4;
+  --lr-orange: #E87722;            /* "LR Orange" */
+  --lr-off-orange: #FDF1E9;        /* "Off Orange" (was informal cream) */
+
+  /* Scavenger Hunt Specific section */
+  --lr-teal: #6AAEAA;
+  --lr-navy: #335573;              /* "Navy Blue" */
+  --lr-cream: #FFF4D4;             /* "Cream" */
+  --lr-sh-gray: #D9D9D9;
+
+  /* Supporting values observed in components */
+  --lr-orange-hover: #FF8A32;        /* button primary hover */
+  --lr-orange-focus-ring: rgba(232, 119, 34, 0.26);
+  --lr-orange-tint: rgba(232, 119, 34, 0.08); /* secondary focus fill */
+  --lr-gray-light: #ECECEC;          /* accordion fill, white-button hover */
+  --lr-gray-badge: #E3E3E3;          /* badge fill */
+  --lr-brown: #512A0C;
+  --lr-text-muted: #777777;
+  --lr-text-quiet: #8D8D94;
+  --lr-text-heading-soft: #555555;
+
+  /* Semantic aliases */
+  --surface-page: var(--lr-white);
+  --surface-warm: var(--lr-off-orange);
+  --surface-card: var(--lr-white);
+  --surface-fill: var(--lr-gray-light);
+  --surface-dark: var(--lr-black);
+  --text-body: var(--lr-black);
+  --text-muted: var(--lr-text-muted);
+  --text-on-brand: var(--lr-white);
+  --brand-primary: var(--lr-orange);
+  --brand-primary-hover: var(--lr-orange-hover);
+  --focus-ring: var(--lr-blue);
+  --shadow-card: 0px 4px 10px 0px rgba(82, 82, 82, 0.1);
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env*
+
+# Materials provided by Let's Roam for the assessment: kept local, not published.
+reference/current-hunt-demo/
+reference/design-system/
+reference/ghost-tour-app-flow.png
+redesign/public/current-app/

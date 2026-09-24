@@ -1,0 +1,15 @@
+@import './styles/fonts.css';
+@import './styles/tokens/colors.css';
+@import './styles/tokens/typography.css';
+@import './styles/tokens/effects.css';
+@import './styles/app.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: var(--lr-white-1);
+  color: var(--lr-black);
+  -webkit-font-smoothing: antialiased;
+}
+button { font: inherit; }
