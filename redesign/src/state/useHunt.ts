@@ -37,6 +37,13 @@ function freshState(): SavedState {
 }
 
 function load(): SavedState {
+  // Opening the app with ?reset starts a fresh hunt (handy for demos and recordings).
+  const url = new URL(window.location.href)
+  if (url.searchParams.has('reset')) {
+    url.searchParams.delete('reset')
+    window.history.replaceState(null, '', url)
+    return freshState()
+  }
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (raw) return { ...freshState(), ...JSON.parse(raw) }

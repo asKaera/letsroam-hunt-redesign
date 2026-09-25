@@ -39,7 +39,7 @@ Production build: `npm run build && npm run preview`.
    - **End hunt** ends the timer. Challenges that were started but not finished turn orange; the rest keep their colors.
    - **Reset** starts over.
 
-Progress is saved in `localStorage`, so a reload keeps your place.
+Progress is saved in `localStorage`, so a reload keeps your place. Add `?reset` to the URL (e.g. `http://localhost:5173/?reset`) to start a fresh hunt.
 
 ### Structure
 ```
@@ -58,5 +58,5 @@ Tapping a challenge card opens the **current app's** location and challenge scre
 
 ## Links
 
-- Design: _TBD_
-- Walkthrough video: _TBD_
+- **Walkthrough video** (4 min, with captions): https://drive.google.com/file/d/1LLTQX4x4VebBV_GleIZbKyjwy5TgJk-y/view?usp=sharing
+- **Design:** designed directly in code, iterating on a phone. See the running demo (above) and [docs/DESIGN_CRITIQUE.md](docs/DESIGN_CRITIQUE.md) §C for the design decisions.
