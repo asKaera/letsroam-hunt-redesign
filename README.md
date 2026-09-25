@@ -2,12 +2,30 @@
 
 Frontend developer assessment: redesign the main scavenger-hunt screen to raise **completion rate**, **fun**, and **clarity**.
 
+## For reviewers: start here
+
+| | |
+|---|---|
+| **Try the design** (best on a phone) | https://askaera.github.io/letsroam-hunt-redesign/ |
+| **Walkthrough video** (4 min, captions) | [Google Drive](https://drive.google.com/file/d/1LLTQX4x4VebBV_GleIZbKyjwy5TgJk-y/view?usp=sharing) |
+| **Critique & recommendations** | [docs/DESIGN_CRITIQUE.md](docs/DESIGN_CRITIQUE.md) |
+| **How the design evolved** | [docs/DESIGN_PROCESS.md](docs/DESIGN_PROCESS.md) |
+| **AI transcript** | [AI_CONVERSATION_TRANSCRIPT.md](AI_CONVERSATION_TRANSCRIPT.md) |
+
+![Before and after](docs/screens/before-after.png)
+
+![Card states: not started, in progress / done, time's up](docs/screens/card-states.png)
+
+In the live demo, tapping a card opens the current app's screens only when run locally with the provided build (see below). Use the **Demo controls** at the bottom to solve tasks, skip time or end the hunt.
+
 ## Repository layout
 
 | Path | What it is |
 |---|---|
 | `redesign/` | The redesigned hunt screen — React + TypeScript + Vite demo |
 | `docs/DESIGN_CRITIQUE.md` | Critique of the current design (§A), questions and ideas for the business (§B), and what the redesign implements (§C) |
+| `docs/DESIGN_PROCESS.md` | Decision log: what was unclear, what I tried, what I decided |
+| `docs/screens/` | Screenshots of the redesign |
 | `AI_CONVERSATION_TRANSCRIPT.md` | Full AI conversation transcript |
 | `redesign/src/styles/tokens/` | Color, type and effect tokens from the Let's Roam design system |
 
@@ -59,4 +77,5 @@ Tapping a challenge card opens the **current app's** location and challenge scre
 ## Links
 
 - **Walkthrough video** (4 min, with captions): https://drive.google.com/file/d/1LLTQX4x4VebBV_GleIZbKyjwy5TgJk-y/view?usp=sharing
-- **Design:** designed directly in code, iterating on a phone. See the running demo (above) and [docs/DESIGN_CRITIQUE.md](docs/DESIGN_CRITIQUE.md) §C for the design decisions.
+- **Live demo:** https://askaera.github.io/letsroam-hunt-redesign/
+- **Design:** designed directly in code, iterating on a phone. See [docs/DESIGN_PROCESS.md](docs/DESIGN_PROCESS.md) and [docs/DESIGN_CRITIQUE.md](docs/DESIGN_CRITIQUE.md) §C.

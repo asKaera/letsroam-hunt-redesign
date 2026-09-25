@@ -1,6 +1,8 @@
 // Demo hunt content, based on the Seattle "Legacy Ghost Capture" tour in
 // reference/ghost-tour-app-flow.png. Edit freely — the UI is fully data-driven.
 
+import { asset } from '../asset'
+
 export type TaskType = 'trivia' | 'text' | 'photo'
 
 export interface Task {
@@ -47,14 +49,14 @@ export const hunt: Hunt = {
   title: 'Seattle Ghost Tour',
   city: 'Seattle',
   teamName: 'Ghostbuster Team',
-  teamPhoto: '/assets/hunt/TeamPhoto.png',
+  teamPhoto: asset('/assets/hunt/TeamPhoto.png'),
   durationMin: 90,
   challenges: [
     {
       id: 'moore',
       name: 'Moore Theatre',
       address: '1932 2nd Ave, Seattle',
-      photo: '/assets/hunt/moore-theatre.jpg',
+      photo: asset('/assets/hunt/moore-theatre.jpg'),
       distance: '0.3 mi',
       walk: '6 min walk',
       lat: 47.6114,
@@ -111,7 +113,7 @@ export const hunt: Hunt = {
       id: 'butterworth',
       name: 'Butterworth Building',
       address: '1921 1st Ave, Seattle',
-      photo: '/assets/hunt/butterworth.jpg',
+      photo: asset('/assets/hunt/butterworth.jpg'),
       distance: '0.2 mi',
       walk: '4 min walk',
       lat: 47.6107,
@@ -159,7 +161,7 @@ export const hunt: Hunt = {
       id: 'pike',
       name: 'Pike Place Market',
       address: '85 Pike St, Seattle',
-      photo: '/assets/hunt/pike-place.jpg',
+      photo: asset('/assets/hunt/pike-place.jpg'),
       distance: '0.4 mi',
       walk: '8 min walk',
       lat: 47.6094,

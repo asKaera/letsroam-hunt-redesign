@@ -6,6 +6,7 @@ import Icon from '../components/Icon'
 import { MapSheet, ScoringSheet } from '../components/InfoSheets'
 import { hunt, type Challenge } from '../data/hunt'
 import { useHunt, type ChallengeStatus } from '../state/useHunt'
+import { asset } from '../asset'
 
 /**
  * The redesigned main hunt screen. What a card opens (location, check-in, challenges) is the
@@ -46,7 +47,7 @@ export default function HuntScreen() {
       <main className="content">
         {api.huntOver ? (
           <div className="banner banner--over" role="status">
-            <img src="/assets/mascots/star.png" alt="" />
+            <img src={asset('/assets/mascots/star.png')} alt="" />
             <div>
               <b>Time's up! Final score {api.totalPoints.toLocaleString()} pts</b>
               <span>

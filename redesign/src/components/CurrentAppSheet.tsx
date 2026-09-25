@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Icon from './Icon'
+import { asset } from '../asset'
 
 /**
  * Opens a screen of the CURRENT app: the provided build in public/current-app/ (copied unchanged
@@ -17,7 +18,7 @@ export default function CurrentAppSheet({ screen, onClose }: { screen: CurrentAp
   // The provided build isn't in the public repo (it's Let's Roam's app); check it has been added locally.
   const [available, setAvailable] = useState<boolean | null>(null)
   useEffect(() => {
-    fetch('/current-app/hunt-data.js')
+    fetch(asset('/current-app/hunt-data.js'))
       .then((r) => r.text())
       .then((t) => setAvailable(t.includes('HUNT_DATA')))
       .catch(() => setAvailable(false))
@@ -51,7 +52,7 @@ export default function CurrentAppSheet({ screen, onClose }: { screen: CurrentAp
             <Icon name="close" />
           </button>
         </header>
-        {available && <iframe ref={frame} src="/current-app/index.html" title="Current app screen" onLoad={onLoad} />}
+        {available && <iframe ref={frame} src={asset('/current-app/index.html')} title="Current app screen" onLoad={onLoad} />}
         {available === false && (
           <div className="current-app-missing">
             <p>
